@@ -1,0 +1,23 @@
+.navbar-h1 {
+  color:wheat
+}
+
+p{color:wheat;}
+body {
+  background-color: white;
+  background-image: url(image.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.leguecard{height: 180px; color: black;  border: 2px solid white;
+  border-radius: 12px;
+  padding: 20px;}
+  .footer {
+  text-align: center;   
+  color: wheat;
+  margin-top: 40px;    
+  padding: 20px 0;     
+}
+.h{color: wheat;}
+
