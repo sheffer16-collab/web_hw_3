@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0b1220;
+    color: #ffffff;
+  }
+  
+  /* הגדרת container שמתאימה לשימוש ב-class (גם אם התגית היא main) */
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  /* אזור עליון */
+  .top-bar {
+    background-color: #111a2e;
+    border-bottom: 1px solid #2a3558;
+  }
+  
+  .top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+  }
+  
+  .site-title {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  /* תפריט */
+  .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .menu a {
+    color: #cbd5f5;
+    text-decoration: none;
+  }
+  
+  .menu a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hero */
+  .hero {
+    padding: 30px 0;
+  }
+  
+  .hero-text {
+    max-width: 600px;
+    font-size: 16px;
+  }
+  
+  .hero-actions {
+    margin-top: 15px;
+  }
+  
+  /* כפתורים */
+  .btn {
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-left: 5px;
+  }
+  
+  .btn-light {
+    background-color: #475569;
+  }
+  
+  /* Grid ליגות */
+  .league-grid {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+  }
+  
+  .card {
+    background-color: #111a2e;
+    padding: 15px;
+    border-radius: 8px;
+    width: 30%;
+  }
+  
+  .card h3 {
+    margin-top: 0;
+  }
+  
+  /* תחתית */
+  .footer {
+    background-color: #111a2e;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+  }
+  
+  /* רספונסיביות */
+  @media (max-width: 800px) {
+    .league-grid {
+      flex-direction: column;
+    }
+  
+    .card {
+      width: 100%;
+    }
+  
+    .top-inner {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .menu li {
+      display: block;
+      margin: 5px 0;
+    }
+  }
